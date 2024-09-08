@@ -4,7 +4,8 @@
   "description": "This is a practice repository for unit testing using Jest",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "watch": "jest --watchAll"
   },
   "author": "",
   "license": "ISC",
