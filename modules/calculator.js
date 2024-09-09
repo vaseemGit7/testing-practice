@@ -30,6 +30,14 @@ const multiply = (num1, num2) => {
   }
 };
 
-const calculator = { add, subtract, multiply };
+const divide = (num1, num2) => {
+  if (isValidArgument(num1, num2)) {
+    return num1 / num2;
+  } else {
+    return "Invalid argument";
+  }
+};
+
+const calculator = { add, subtract, multiply, divide };
 
 export default calculator;
