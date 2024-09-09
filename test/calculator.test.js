@@ -8,7 +8,7 @@ test("add(-15,10) should result -5", () => {
   expect(calculator.add(-15, 10)).toBe(-5);
 });
 
-test('add("a",10) should result "Invalid arguement"', () => {
+test('add("a",10) should result "Invalid argument"', () => {
   expect(calculator.add("a", 10)).toBe("Invalid argument");
 });
 
@@ -22,4 +22,16 @@ test("subtract(0.6,0.4) should result 0.2", () => {
 
 test('subtract(100, "hundred") should result "Invalid argument"', () => {
   expect(calculator.subtract(100, "hundred")).toBe("Invalid argument");
+});
+
+test("multiply(15,3) should result 45", () => {
+  expect(calculator.multiply(15, 3)).toBe(45);
+});
+
+test("multiply(-5,2) should result -10", () => {
+  expect(calculator.multiply(-5, 2)).toBe(-10);
+});
+
+test('multiply("ten",40) should result "Invalid argument"', () => {
+  expect(calculator.multiply("ten", 40)).toBe("Invalid argument");
 });
