@@ -14,6 +14,14 @@ const add = (num1, num2) => {
   }
 };
 
-const calculator = { add };
+const subtract = (num1, num2) => {
+  if (isValidArgument(num1, num2)) {
+    return num1 - num2;
+  } else {
+    return "Invalid argument";
+  }
+};
+
+const calculator = { add, subtract };
 
 export default calculator;
