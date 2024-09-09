@@ -35,3 +35,15 @@ test("multiply(-5,2) should result -10", () => {
 test('multiply("ten",40) should result "Invalid argument"', () => {
   expect(calculator.multiply("ten", 40)).toBe("Invalid argument");
 });
+
+test("divide(100,4) should result 25", () => {
+  expect(calculator.divide(100, 4)).toBe(25);
+});
+
+test("divide(0.8,0.2) should result 4", () => {
+  expect(calculator.divide(0.8, 0.2)).toBe(4);
+});
+
+test('divide(1, null) should result "Invalid argument"', () => {
+  expect(calculator.divide(1, null)).toBe("Invalid argument");
+});
